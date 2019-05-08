@@ -23,7 +23,11 @@ function calcNumberOFBottles(money){
       updateOnBuy(toBuy, "boughtBycap");
     }
   }
-  console.log(details.bought);
+  console.log("Total number of bottles", details.bought);
+  console.log("Total earned:");
+  console.log("      bottles: ", details.boughtByBottle);
+  console.log("      caps   : ", details.boughtBycap);
+
 }
 
 let details =
@@ -31,7 +35,7 @@ let details =
       bought          : 0,
       bottle          : 0,
       cap             : 0,
-      boughtByMoney   : 0
+      boughtByMoney   : 0,
       boughtByBottle  : 0,
       boughtBycap     : 0
     };
